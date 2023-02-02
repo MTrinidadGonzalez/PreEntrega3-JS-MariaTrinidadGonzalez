@@ -1,0 +1,348 @@
+html,body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*colores de esta version*/
+/*body{
+  violeta  color: rgb(85,5,59);
+  verde  color: rgb(104,142,38);
+   amarillo color: rgb(250,166,19);
+   naranja color: rgb(244,71,8);
+    bordo background-color: rgb(161,7,2);
+}*/
+
+
+
+/*pagina multicolor*/
+/*****************************estilos generales*/
+body{
+  /*  font-family: 'Catamaran', sans-serif;*/
+  font-family: sans-serif;
+ /*   font-size: larger;*/
+    color: rgb(85,5,39);
+    transition: all 1s;
+    scroll-behavior: smooth;
+}
+h1{
+   /* color: rgb(161,7,2);*/
+   color:  rgb(250,166,19);
+}
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   /* margin-bottom: 30px;*/
+    background-color:  rgb(85,5,39);
+    padding: 10px;
+}
+.titulosPrincipales{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgb(250,166,19);
+}
+.iniciarSesion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+   
+}
+input{
+    border: 1px solid rgb(104,142,38);
+    color: rgb(85,5,39);
+    border-radius: 6px;
+    margin: 5px;
+    padding: 5px;
+}
+button , a{
+    text-decoration: none;
+    border: 1px solid rgb(104,142,38);
+    background-color: rgb(250,166,19);
+    color: rgb(85,5,39);
+    border-radius: 6px;
+    margin: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+a:hover{
+    background-color: white;
+    border: 1px solid rgb(250,166,19);
+    color: rgb(85,5,39);
+}
+button:hover{
+    background-color: white;
+    border: 1px solid rgb(250,166,19);
+    color: rgb(85,5,39);
+}
+
+ul, li{
+    text-decoration: none;
+    list-style: none;
+}
+
+footer{
+    background-color:  rgb(85,5,39);
+    color: white;
+    font-size: small;
+    margin-bottom: 0%;
+    padding: 7px;
+    margin-top: 40px;
+}
+
+/************************cuepo inicio*****************/
+
+.crearCuentaInicio{
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(rgb(85,5,39),rgb(104,142,38));
+ /*   background-color: rgb(104,142,38);*/
+    color: white;
+    height: 100%;
+}
+.cuerpoInicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+.contenidoInicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+   /* margin-top: 70px;
+    margin-bottom: 70px;*/
+ padding: 20px;
+  font-weight: 100;
+  color: black;
+
+}
+.imagenesAnimacionesInicio{
+    background-image: url(./../imagenes/maestraFrustrada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    width: 500px;
+    animation-name: cambioImagen;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+}
+@keyframes cambioImagen{
+    0%{ background-image: url(./../imagenes/compartirIdeas.jpg);}
+    25%{background-image: url(./../imagenes/maestraContentajpg.jpg);}
+    50%{background-image: url(./../imagenes/maestraFrustrada2.jpg);}
+    75%{background-image: url(./../imagenes/maestraPensando.jpg);}
+    100%{background-image: url(./../imagenes/maestrosGrupo.jpg);}
+}
+
+/*.presentacion{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}*/
+
+/**************************pagina principal****************/
+.barraNavegacion{
+    padding: 10px;
+}
+.listaBarradeNavegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.listaBarradeNavegacion a{
+    color: rgb(85,5,39);
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+    border-right: 1px solid  rgb(250,166,19);
+}
+.listaBarradeNavegacion a:hover{
+    color:rgb(104,142,38);
+}
+
+
+/****************carpetaDe usuario****************/
+
+/*mi carpeta*/
+
+/*materias troncales*/
+    .materiasTroncales{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 300px;
+        padding: 10px;
+}
+.botonLengua{
+    background-image: url(./../imagenes/materiasImg/lengua.jpg);
+    
+   }
+   .botonMatematica{
+    background-image: url(./../imagenes/materiasImg/matematica.jpg);
+    
+   }
+   .botonCuenciasSociales{
+    background-image: url(./../imagenes/materiasImg/cienciassociales.jpg);
+    
+   }
+   .botonCienciasNaturales{
+    background-image: url(./../imagenes/materiasImg/cienciasnatruales.jpg);
+    
+   }
+
+ /*materias complementarias*/  
+.matComplementarias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 300px;
+    padding: 10px;
+}
+.botonIdentidadConviven{
+    background-image: url(./../imagenes/materiasImg/identidadYConvivencia.jpg);
+    
+   }
+   .botonEsi{
+    background-image: url(./../imagenes/materiasImg/esi.jpg);
+    
+   }
+   .botonReligion{
+    background-image: url(./../imagenes/materiasImg/religion.jpg);
+    
+   }
+
+ /*materias especiales*/  
+.matEspeciales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 300px;
+    padding: 10px;
+}
+
+.botonMusica{
+    background-image: url(./../imagenes/materiasImg/musica1.jpg);
+   
+}
+.botonArte{
+    background-image: url(./../imagenes/materiasImg/artistica.jpg);
+   
+}
+.botonIngles{
+    background-image: url(./../imagenes/materiasImg/ingles.jpg);
+    
+}
+.botonEdFisica{
+    background-image: url(./../imagenes/materiasImg/educacionFisica.jpg);
+    
+}
+
+.botonesMateriasMiCarpeta{
+    transition: all 1s;
+    background-size: cover;
+    height: 230px;
+    width: 220px;
+}
+.botonesMateriasMiCarpeta:hover{
+    background-image: none;
+    background-color:  rgb(161,7,2);
+}
+
+/*.nombreMateriaCarpeta{
+    display: none; }*/
+.nombreMateriaCarpeta:hover{
+    display: initial;
+    font-size: larger;
+    text-transform: uppercase;
+    background-color:  rgb(85,5,39);
+    color:  rgb(250,166,19);
+    padding: 10px;
+    border-radius: 6px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 400;
+    }
+
+
+/************************crearcuenta****************/
+.formulariocrearCuenta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(250,166,19);
+    border-radius: 6px;
+    padding: 10px;
+}
+/*seccion de filtrar gente*/
+.buscadoreDeperfiles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(250,166,19);
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+}
+.buscadorParte{
+    border: 1px solid rgb(250,166,19);
+    border-radius: 6px;
+    padding: 30px;
+    margin: 30px;
+    min-width: 70%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*esta clase se la añado a las cards que creo*/
+.cardPerfilDeUsuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(250,166,19);
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    min-width: 200px;
+    min-height: 220px;
+}
+/*contenedor de cards que creo en js*/
+.contenedorDeCards{
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+
+}
+.inputsForm{
+    margin: 20px;
+}
+.formYPerfilUsuario{
+   /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;*/
+    border: 1px solid rgb(104,142,38);
+    color: rgb(85,5,39);
+    padding: 20px;
+
+}
+

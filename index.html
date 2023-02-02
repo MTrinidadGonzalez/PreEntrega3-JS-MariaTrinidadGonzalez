@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="aqui va la descripcion">
+    <meta name="keywords" content="aqui van las palabras claves">
+    <title>Titulode la pagina</title> 
+    <link rel="stylesheet" href="./styles/main.css">
+    <!--google font y boots-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Indie+Flower&family=La+Belle+Aurore&family=Patrick+Hand&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+   <!--Header y nav Inicio-->
+   <div class="encabezado">
+    <header class="logo">     
+     <!--   <h1 class="tituloLogo"> <span  class="letracolor1">M</span>aestros<samp class="letracolor2">U</samp>nidos</h1>-->
+     <h1 class="tituloLogo">Lo de entrar a sesion no anda</h1>
+    </header>
+    <section class="iniciarSesion">
+        <input type="email" placeholder="@Correo">
+        <input type="password" placeholder="Contraseña">
+        <p><a href="./pages/principal.html">Entrar</a></p>
+    </section>
+</div>
+<nav class="barraNavegacion">
+    <ul class="listaBarradeNavegacion">
+     <li><a href="./../index.html">Inicio</a></li>
+     <li><a href="#carpetaDeUsuario">Mi Carpeta</a></li>
+     <li><a href="#formCrearCuenta">Crear Cuenta</a></li>
+     <li><a href="#seccionComunidad">Comunidad- Buscador de parfiles</a></li>
+    </ul>
+   </nav>
+
+  <section class="crearCuentaInicio">
+    <h3 >¿Todavía no tienes tu cuenta?</h3>
+    <p><a href="#seccionCrearCuenta">CREAR CUENTA</a></p>
+</section>
+<!--Main, texto de presentacion-->
+<div class="container cuerpoInicio">
+    <main class="contenidoInicio">
+                <p class="presentacion">
+                    
+                    <ul>
+                        <h3>Esta herramienta te permitirá:</h3>
+                        <li>presentacion de mentirita</li>
+                        <li>Colaborar con empatía y compañerismo
+                            de los docentes de nivel primario.</li>
+                        <li>Entregas y revisiones de proyectos en el marco de la práctica docente.</li>
+                        <li>Llevar un registro y una carpeta virtual de sus planificaciónes, secuencias didácticas y proyectos,
+                            de forma organizada en su trayectoria.</li> 
+                        <li>Enriquecerse de planificaciones, actividadades e ideas de otras/os maestras/os.</li>
+                        <li>Habilitar que directivos de escuelas privadas argentinas compartan convocatorias
+                            de trabajo según su provincia y localidad.</li>
+                        <li>Que cada maestrx pueda subir su postulación laboral y hoja de vida y se pueda acceder desde el sitio. </li>
+                    </ul> 
+                </p>
+    </main>
+    <div class="imagenesAnimacionesInicio">
+     <!--  <img src="./imagenes/compartirIdeas.jpg" alt="">--> 
+    </div>
+</div>
+
+<!--formulario crear cuenta-->
+<h2 class="titulosPrincipales">Formulario crear cuenta:</h2>
+<div class="container formYPerfilUsuario">
+ <h5>Subo perfiles para que me queden en el local storage</h5>
+<form action="" id="formCrearCuenta" class="formulariocrearCuenta">
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="inputsForm">
+    <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="inputsForm">
+    
+    <label for="provinciaUsuario">Provincia:</label>
+    <select id="provincias" class="inputsForm" name="provinciaUsuario">
+        <option value="Capital Federal">Buenos Aires</option>
+        <option value="CABA">CABA</option>
+        <option value="Catamarca">Catamarca</option>
+        <option value="Chaco">Chaco</option>
+        <option value="Chubut">Chubut</option>
+        <option value="Cordoba">Córdobaa</option>
+        <option value="Corrientes">Corrientes</option>
+        <option value="Entre Rios">Entre Ríos</option>
+        <option value="Jujuy">Jujuy</option>
+        <option value="La Pampa">La Pampa</option>
+        <option value="La Rioja">La Rioja</option>
+        <option value="Formosa">Formosa</option>
+        <option value="Misiones">Misiones</option>
+        <option value="Neuquen">Neuquén</option>
+        <option value="Rio Negro">Río Negro</option>
+        <option value="Salta">Salta</option>
+        <option value="San Juan">San Juan</option>
+        <option value="San Luis">San Luis</option>
+        <option value="Santa Cruz">Santa Cruz</option>
+        <option value="Santa Fe">Santa Fe</option>
+        <option value="Santiago Del Estero">Santiago del Estero</option>
+        <option value="Tierra del fuego">Tierra del Fuego</option>
+        <option value="Tucuman">Tucumán</option>
+    </select>
+
+   <input type="text" name="localidad" id="localidad" placeholder="localidad" class="inputsForm">
+
+    <label for="cargoUsuario">Cargo: estudiante / docente / directivo</label>
+    <input type="text" name="cargo" id="cargoUsuario" placeholder="docente/estudiante/directivo" class="inputsForm">
+    <input type="email" name="correo" id="correoUsuario" placeholder="correo@gmail.com" class="inputsForm">
+
+<textarea name="descripcionDeUsuario" id="descripcionDeUsuario" cols="30" rows="10" class="inputsForm" placeholder="Añade una descripción"></textarea>
+
+    <button type="submit" id="btn-CrearCuenta">CREAR CUENTA</button>
+</form>
+</div>
+
+ <!---Mi perfil/ carpeta del usuario-->
+ <h2 class="titulosPrincipales" id="carpetaDeUsuario">MIS CARPETAS</h2>
+ <div class="  container cuerpoMiCarpeta"> 
+     <h2>Materias Troncales</h2>
+     <div class="materiasTroncales"> 
+         <!--lengua-->
+     <p>
+         <button class="btn btn-primary botonLengua botonesMateriasMiCarpeta" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+          <samp class="nombreMateriaCarpeta"> Lengua</samp>
+         </button>
+       </p>
+       <div style="min-height: 120px;">
+         <div class="collapse collapse-horizontal" id="collapseWidthExample">
+           <div class="card card-body" style="width: 300px;">
+            <ul class="listaMateriaMiCarpeta">
+             <li><a href="" class="materiaMiCarpeta">Primer grado</a> </li>
+             <li><a href="" class="materiaMiCarpeta"> Segundo Grado</a> </li>
+             <li><a href="" class="materiaMiCarpeta">Tercer grado</a> </li>
+             <li><a href="" class="materiaMiCarpeta">Cuarto Grado</a> </li>
+             <li><a href="" class="materiaMiCarpeta"> Quinto Grado</a> </li>
+             <li><a href="" class="materiaMiCarpeta">Sexto Grado</a> </li>
+            </ul>
+           </div>
+         </div>
+       </div>
+       <!--matematica-->
+       <p>
+         <button class="btn btn-primary botonMatematica botonesMateriasMiCarpeta" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+          <samp class="nombreMateriaCarpeta"> Matemática</samp> 
+         </button>
+       </p>
+       <div style="min-height: 120px;">
+         <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+           <div class="card card-body" style="width: 300px;">
+             <ul class="listaMateriaMiCarpeta">
+                 <li><a href="" class="materiaMiCarpeta">Primer grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta"> Segundo Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Tercer grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Cuarto Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta"> Quinto Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Sexto Grado</a> </li>
+                </ul>
+           </div>
+         </div>
+       </div>
+       <!--Ciencias sociales-->
+       <p>
+         <button class="btn btn-primary botonCuenciasSociales botonesMateriasMiCarpeta" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3">
+          <span class="nombreMateriaCarpeta">Cs. Sociales</span> 
+         </button>
+       </p>
+       <div style="min-height: 120px;">
+         <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+           <div class="card card-body" style="width: 300px;">
+             <ul class="listaMateriaMiCarpeta">
+                 <li><a href="" class="materiaMiCarpeta">Primer grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta"> Segundo Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Tercer grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Cuarto Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta"> Quinto Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Sexto Grado</a> </li>
+                </ul>
+           </div>
+         </div>
+       </div>
+       <!--Ciencias Naturales-->
+       <p>
+         <button class="btn btn-primary botonCienciasNaturales botonesMateriasMiCarpeta" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample4" aria-expanded="false" aria-controls="collapseWidthExample4">
+         <samp class="nombreMateriaCarpeta">Cs. Naturales</samp>  
+         </button>
+       </p>
+       <div style="min-height: 120px;">
+         <div class="collapse collapse-horizontal" id="collapseWidthExample4">
+           <div class="card card-body" style="width: 300px;">
+             <ul class="listaMateriaMiCarpeta">
+                 <li><a href="" class="materiaMiCarpeta">Primer grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta"> Segundo Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Tercer grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Cuarto Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta"> Quinto Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Sexto Grado</a> </li>
+                </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!--materias complementarias-->
+     <h2>Materias Complementarias</h2>
+     <section class="matComplementarias">
+           <!--identidad y convivencia-->
+           <p>
+             <button class="btn btn-primary botonIdentidadConviven botonesMateriasMiCarpeta" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample9" aria-expanded="false" aria-controls="collapseWidthExample9">
+             <samp class="nombreMateriaCarpeta">Identidad y Convivencia</samp>
+             </button>
+           </p>
+           <div style="min-height: 120px;">
+             <div class="collapse collapse-horizontal" id="collapseWidthExample9">
+               <div class="card card-body" style="width: 300px;">
+                <ul class="listaMateriaMiCarpeta">
+                 <li><a href="" class="materiaMiCarpeta">Primer grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta"> Segundo Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Tercer grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Cuarto Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta"> Quinto Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Sexto Grado</a> </li>
+                </ul>
+               </div>
+             </div>
+           </div>
+           <!--ESI-->
+           <p>
+             <button class="btn btn-primary botonEsi botonesMateriasMiCarpeta" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample10" aria-expanded="false" aria-controls="collapseWidthExample10">
+              <span class="nombreMateriaCarpeta">ESI</span> 
+             </button>
+           </p>
+           <div style="min-height: 120px;">
+             <div class="collapse collapse-horizontal" id="collapseWidthExample10">
+               <div class="card card-body" style="width: 300px;">
+                 <ul class="listaMateriaMiCarpeta">
+                     <li><a href="" class="materiaMiCarpeta">Primer grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta"> Segundo Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Tercer grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Cuarto Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta"> Quinto Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Sexto Grado</a> </li>
+                    </ul>
+               </div>
+             </div>
+           </div>
+           <!--religion-->
+           <p>
+             <button class="btn btn-primary botonReligion botonesMateriasMiCarpeta" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample11" aria-expanded="false" aria-controls="collapseWidthExample11">
+              <span class="nombreMateriaCarpeta">Religión</span> 
+             </button>
+           </p>
+           <div style="min-height: 120px;">
+             <div class="collapse collapse-horizontal" id="collapseWidthExample11">
+               <div class="card card-body" style="width: 300px;">
+                 <ul class="listaMateriaMiCarpeta">
+                     <li><a href="" class="materiaMiCarpeta">Primer grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta"> Segundo Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Tercer grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Cuarto Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta"> Quinto Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Sexto Grado</a> </li>
+                    </ul>
+               </div>
+             </div>
+           </div>
+     </section>
+     <!--materias especiales-->
+     <h2>Materias especiales</h2>
+     <div class="matEspeciales">
+         <!--Musica-->
+         <p>
+             <button class="btn btn-primary botonMusica botonesMateriasMiCarpeta" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample5" aria-expanded="false" aria-controls="collapseWidthExample5">
+             <span class="nombreMateriaCarpeta">Música</span>>
+             </button>
+           </p>
+           <div style="min-height: 120px;">
+             <div class="collapse collapse-horizontal" id="collapseWidthExample5">
+               <div class="card card-body" style="width: 300px;">
+                <ul class="listaMateriaMiCarpeta">
+                 <li><a href="" class="materiaMiCarpeta">Primer grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta"> Segundo Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Tercer grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Cuarto Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta"> Quinto Grado</a> </li>
+                 <li><a href="" class="materiaMiCarpeta">Sexto Grado</a> </li>
+                </ul>
+               </div>
+             </div>
+           </div>
+           <!--Artística-->
+           <p>
+             <button class="btn btn-primary botonArte botonesMateriasMiCarpeta" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample6" aria-expanded="false" aria-controls="collapseWidthExample6">
+             <span class="nombreMateriaCarpeta">Artística</span>  
+             </button>
+           </p>
+           <div style="min-height: 120px;">
+             <div class="collapse collapse-horizontal" id="collapseWidthExample6">
+               <div class="card card-body" style="width: 300px;">
+                 <ul class="listaMateriaMiCarpeta">
+                     <li><a href="" class="materiaMiCarpeta">Primer grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta"> Segundo Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Tercer grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Cuarto Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta"> Quinto Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Sexto Grado</a> </li>
+                    </ul>
+               </div>
+             </div>
+           </div>
+           <!--Inglés-->
+           <p>
+             <button class="btn btn-primary botonIngles botonesMateriasMiCarpeta" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample7" aria-expanded="false" aria-controls="collapseWidthExample7">
+             <span class="nombreMateriaCarpeta">Inglés</span>  
+             </button>
+           </p>
+           <div style="min-height: 120px;">
+             <div class="collapse collapse-horizontal" id="collapseWidthExample7">
+               <div class="card card-body" style="width: 300px;">
+                 <ul class="listaMateriaMiCarpeta">
+                     <li><a href="" class="materiaMiCarpeta">Primer grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta"> Segundo Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Tercer grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Cuarto Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta"> Quinto Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Sexto Grado</a> </li>
+                    </ul>
+               </div>
+             </div>
+           </div>
+           <!--Ed fisica-->
+           <p>
+             <button class="btn btn-primary botonEdFisica botonesMateriasMiCarpeta" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample8" aria-expanded="false" aria-controls="collapseWidthExample8">
+             <span class="nombreMateriaCarpeta">Ed. Física</span>  
+             </button>
+           </p>
+           <div style="min-height: 120px;">
+             <div class="collapse collapse-horizontal" id="collapseWidthExample8">
+               <div class="card card-body" style="width: 300px;">
+                 <ul class="listaMateriaMiCarpeta">
+                     <li><a href="" class="materiaMiCarpeta">Primer grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta"> Segundo Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Tercer grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Cuarto Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta"> Quinto Grado</a> </li>
+                     <li><a href="" class="materiaMiCarpeta">Sexto Grado</a> </li>
+                    </ul>
+               </div>
+             </div>
+           </div>
+     </div>
+   </div>
+
+
+ <!--SECCION DE COMUNIDAD filtreo los perfiles-->
+   <h2 class="titulosPrincipales" id="seccionComunidad">COMUNIDAD</h2>
+<section class="buscadoreDeperfiles">
+    <!--ver todos los ingresados-->
+    <h5 class="tituloBuscadores">Busco todos los perfiles:</h5>
+    <div class="buscadorParte">
+      <button type="submit" id="btn-listaUsariosCard">VER TODOS LOS USUARIOS</button>
+        <div class="contenedorDeCards" id="divConCardUsuarios">
+            
+        </div>
+    </div>
+    
+
+    <!--buscador por nombre y apellido-->
+    <h5 class="tituloBuscadores">Busco perfiles por nombre y apellido:</h5>
+    <p>Parece que se traba al principio pero anda bien</p>
+    <div class="buscadorParte">
+      
+    <div id="buscadorNombreYapellido" class="buscadorNombreYapellido">
+        <input type="text" id="buscadorNombre">
+        <input type="text" id="buscadorApellido">
+      
+        <button type="submit" id="btnBuscar">Buscar</button>
+        <div id="divEncontradosNombre" class="contenedorDeCards"></div>> </div>
+    </div>
+    
+</div>
+<!--buscarod por provincia-->
+<h5 class="tituloBuscadores">Busco por provincia:</h5>
+<div class="buscadorParte">
+   
+    <div id="buscadorProvinciaContainer">
+        <label for="buscoProvincia">Provincia:</label>
+        <select id="buscoProvincia" class="inputsForm" name="buscadorProvincia">
+            <option value="Capital Federal">Buenos Aires</option>
+            <option value="CABA">CABA</option>
+            <option value="Catamarca">Catamarca</option>
+            <option value="Chaco">Chaco</option>
+            <option value="Chubut">Chubut</option>
+            <option value="Cordoba">Córdobaa</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Entre Rios">Entre Ríos</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="La Pampa">La Pampa</option>
+            <option value="La Rioja">La Rioja</option>
+            <option value="Formosa">Formosa</option>
+            <option value="Misiones">Misiones</option>
+            <option value="Neuquen">Neuquén</option>
+            <option value="Rio Negro">Río Negro</option>
+            <option value="Salta">Salta</option>
+            <option value="San Juan">San Juan</option>
+            <option value="San Luis">San Luis</option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Santiago Del Estero">Santiago del Estero</option>
+            <option value="Tierra del fuego">Tierra del Fuego</option>
+            <option value="Tucuman">Tucumán</option>
+        </select>
+    <div id="divCardEncontradosProvincia" class="contenedorDeCards"></div>
+    <button id="btnBuscoProvincia">Buscar</button>
+    </div>
+</div>
+
+</section>
+<footer class="estiloFooter">
+    <p>Recuerda: Dos cabezas piensan más que una! <br>
+    Nos alegra que te sea útil esta página y puedas sumar tamnbién tu granito de arena.
+</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>   
+<script src="./JS/main.js"></script>
+</body>
