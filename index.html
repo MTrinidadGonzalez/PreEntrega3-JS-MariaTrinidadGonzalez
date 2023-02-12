@@ -75,35 +75,22 @@
     <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="inputsForm">
     <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="inputsForm">
     
-    <label for="provinciaUsuario">Provincia:</label>
-    <select id="provincias" class="inputsForm" name="provinciaUsuario">
-        <option value="Capital Federal">Buenos Aires</option>
-        <option value="CABA">CABA</option>
-        <option value="Catamarca">Catamarca</option>
-        <option value="Chaco">Chaco</option>
-        <option value="Chubut">Chubut</option>
-        <option value="Cordoba">Córdobaa</option>
-        <option value="Corrientes">Corrientes</option>
-        <option value="Entre Rios">Entre Ríos</option>
-        <option value="Jujuy">Jujuy</option>
-        <option value="La Pampa">La Pampa</option>
-        <option value="La Rioja">La Rioja</option>
-        <option value="Formosa">Formosa</option>
-        <option value="Misiones">Misiones</option>
-        <option value="Neuquen">Neuquén</option>
-        <option value="Rio Negro">Río Negro</option>
-        <option value="Salta">Salta</option>
-        <option value="San Juan">San Juan</option>
-        <option value="San Luis">San Luis</option>
-        <option value="Santa Cruz">Santa Cruz</option>
-        <option value="Santa Fe">Santa Fe</option>
-        <option value="Santiago Del Estero">Santiago del Estero</option>
-        <option value="Tierra del fuego">Tierra del Fuego</option>
-        <option value="Tucuman">Tucumán</option>
-    </select>
-
-   <input type="text" name="localidad" id="localidad" placeholder="localidad" class="inputsForm">
-
+    <div class="containerUbicaciones">
+      <label for="selectPvcia">Provincia</label>
+      <select name="" id="selectPvcia">
+          <option value="Elige tu Provincia">Elige tu provincia</option>
+      </select>
+      <label for="selectMunisipio">Municipio</label>
+      <select name="" id="selectMunisipio">
+          <option value="Elige tu Municipio">Elige tu municipio</option>
+          <option value="segunda opcion">Segunda opcion</option>
+      </select>
+      <label for="selectLocalidad">Localidad</label>
+      <select name="" id="selectLocalidad">
+          <option value="Elige tu Localidad">Elige tu localidad</option>
+      </select>
+  </div>
+  
     <label for="cargoUsuario">Cargo: estudiante / docente / directivo</label>
     <input type="text" name="cargo" id="cargoUsuario" placeholder="docente/estudiante/directivo" class="inputsForm">
     <input type="email" name="correo" id="correoUsuario" placeholder="correo@gmail.com" class="inputsForm">
@@ -114,9 +101,53 @@
 </form>
 </div>
 
+
+<!--MI CARPETA-->
  <!---Mi perfil/ carpeta del usuario-->
  <h2 class="titulosPrincipales" id="carpetaDeUsuario">MIS CARPETAS</h2>
  <div class="  container cuerpoMiCarpeta"> 
+
+
+<!--formulario lista de tareas-->
+<div class=" container divTareas">
+
+  <form action="" class="formTareas" id="formTareas">
+      <div class="subDivFormTareas">
+          <label for="tareaFecha">Fecha</label>
+          <input type="text" id="tareaFecha" name="tareaFecha">
+      </div>
+      <div class="subDivFormTareas">
+          <label for="tareaTarea">Tarea</label>
+          <input type="text" id="tareaTarea" name="tareaTarea">
+      </div>
+  
+      <div class="subDivFormTareas">
+          <label for="tareaAsignatura">Asignatura</label>
+          <input type="text" id="tareaAsignatura" name="tareaAsignatura">
+      </div>
+     
+      <div class="subDivFormTareas">
+          <label for="descripcionTarea">Descripción</label>
+          <input type="text" id="descripcionTarea" name="descripcionTarea">
+      </div>
+
+      <div class="subDivFormTareas">
+          <button>Añadir taréa</button>
+      </div>
+  </form>
+
+  <table class="tablaTareas" id="tablaTareas">
+      <tr>
+          <th>Día</th>
+          <th>Tarea</th>
+          <th>Asignatura</th>
+          <th>Descripción</th>
+          <th>Borrar</th>
+      </tr>
+  </table>
+</div>
+
+  <!--materias-->
      <h2>Materias Troncales</h2>
      <div class="materiasTroncales"> 
          <!--lengua-->
@@ -350,78 +381,49 @@
      </div>
    </div>
 
-
- <!--SECCION DE COMUNIDAD filtreo los perfiles-->
    <h2 class="titulosPrincipales" id="seccionComunidad">COMUNIDAD</h2>
+ <!--SECCION  filtreo los perfiles-->
+ 
 <section class="buscadoreDeperfiles">
-    <!--ver todos los ingresados-->
-    <h5 class="tituloBuscadores">Busco todos los perfiles:</h5>
-    <div class="buscadorParte">
-      <button type="submit" id="btn-listaUsariosCard">VER TODOS LOS USUARIOS</button>
-        <div class="contenedorDeCards" id="divConCardUsuarios">
-            
-        </div>
-    </div>
-    
-
-    <!--buscador por nombre y apellido-->
-    <h5 class="tituloBuscadores">Busco perfiles por nombre y apellido:</h5>
-    <p>Parece que se traba al principio pero anda bien</p>
-    <div class="buscadorParte">
-      
-    <div id="buscadorNombreYapellido" class="buscadorNombreYapellido">
-        <input type="text" id="buscadorNombre">
-        <input type="text" id="buscadorApellido">
-      
-        <button type="submit" id="btnBuscar">Buscar</button>
-        <div id="divEncontradosNombre" class="contenedorDeCards"></div>> </div>
-    </div>
-    
-</div>
-<!--buscarod por provincia-->
-<h5 class="tituloBuscadores">Busco por provincia:</h5>
-<div class="buscadorParte">
-   
-    <div id="buscadorProvinciaContainer">
-        <label for="buscoProvincia">Provincia:</label>
-        <select id="buscoProvincia" class="inputsForm" name="buscadorProvincia">
-            <option value="Capital Federal">Buenos Aires</option>
-            <option value="CABA">CABA</option>
-            <option value="Catamarca">Catamarca</option>
-            <option value="Chaco">Chaco</option>
-            <option value="Chubut">Chubut</option>
-            <option value="Cordoba">Córdobaa</option>
-            <option value="Corrientes">Corrientes</option>
-            <option value="Entre Rios">Entre Ríos</option>
-            <option value="Jujuy">Jujuy</option>
-            <option value="La Pampa">La Pampa</option>
-            <option value="La Rioja">La Rioja</option>
-            <option value="Formosa">Formosa</option>
-            <option value="Misiones">Misiones</option>
-            <option value="Neuquen">Neuquén</option>
-            <option value="Rio Negro">Río Negro</option>
-            <option value="Salta">Salta</option>
-            <option value="San Juan">San Juan</option>
-            <option value="San Luis">San Luis</option>
-            <option value="Santa Cruz">Santa Cruz</option>
-            <option value="Santa Fe">Santa Fe</option>
-            <option value="Santiago Del Estero">Santiago del Estero</option>
-            <option value="Tierra del fuego">Tierra del Fuego</option>
-            <option value="Tucuman">Tucumán</option>
-        </select>
-    <div id="divCardEncontradosProvincia" class="contenedorDeCards"></div>
-    <button id="btnBuscoProvincia">Buscar</button>
-    </div>
+<!--busco pvcia-->
+<form action="" id="formBuscoProvincia">
+  <h2>Busco por provincia</h2>
+  <div>
+    <label for="selectPvciaBusco"></label>
+    <select name="" id="selectPvciaBusco">
+      <option id="optionPvciaBusco" value="Elige provincia a buscar">Elige provincia a buscar</option>
+    </select>
+    <button id="btnBuscoPvcia" type="submit">Buscar</button>
+</form>
+<div id="divEncontradosPvcia" class="divMuestroUsers"></div>
 </div>
 
+
+  <!--busco por nombre-->
+  <form action="" id="formBuscoNombre">
+    <h2>Busco por nombre y apellido</h2>
+    <div class="busconomYape">
+      <input type="search" id="buscoNombreInput">
+      <input type="search" id="buscoApellidoInput">
+      <button id="btnBuscoNyA" type="submit">Buscar</button>
+      <button id="btnvolverAbuscarName" type="submit">Volver a buscar</button>
+  </form>
+  <div id="divEncontradosNyA" class="divMuestroUsers"></div>
+  
+</div>
 </section>
 <footer class="estiloFooter">
     <p>Recuerda: Dos cabezas piensan más que una! <br>
-    Nos alegra que te sea útil esta página y puedas sumar tamnbién tu granito de arena.
+   Lero lero candelero
 </p>
 </footer>
 
 
+
+
+<!--script swetalert-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<!--boottrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>   
 <script src="./JS/main.js"></script>
 </body>

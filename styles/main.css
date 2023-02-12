@@ -276,8 +276,41 @@ footer{
     font-family: 'Indie Flower', cursive;
     font-weight: 400;
     }
-
-
+.divTareas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgb(85,5,39);
+    margin: 10px;
+    padding: 10px;
+}    
+.formTareas{
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+}    
+.formTareas div{
+ margin: 5px;
+ width: 90%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.tablaTareas{
+    width: 50%;
+}
+.tablaTareas th, tr{
+    border: 1px solid  rgb(250,166,19);
+    padding: 7px;
+    text-align: center;
+}
+.tablaTareas td{
+    border: 1px solid  rgb(250,166,19);
+    padding: 7px;
+    text-align: center;
+}
 /************************crearcuenta****************/
 .formulariocrearCuenta{
     display: flex;
@@ -323,6 +356,7 @@ footer{
     text-align: center;
     min-width: 200px;
     min-height: 220px;
+    margin: 7px;
 }
 /*contenedor de cards que creo en js*/
 .contenedorDeCards{
@@ -344,5 +378,12 @@ footer{
     color: rgb(85,5,39);
     padding: 20px;
 
+}
+
+.divMuestroUsers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
